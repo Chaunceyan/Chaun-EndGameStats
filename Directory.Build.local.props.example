@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <RepoGameDir>/path/to/REPO</RepoGameDir>
+    <R2ProfileDir>/path/to/r2modman/profile</R2ProfileDir>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>EndGameStats</AssemblyName>
+    <RootNamespace>EndGameStats</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../EndGameStats.Core/EndGameStats.Core.csproj" />
+    <Reference Include="Assembly-CSharp" HintPath="$(RepoManagedDir)/Assembly-CSharp.dll" Private="false" />
+    <Reference Include="BepInEx" HintPath="$(R2ProfileDir)/BepInEx/core/BepInEx.dll" Private="false" />
+    <Reference Include="0Harmony" HintPath="$(R2ProfileDir)/BepInEx/core/0Harmony.dll" Private="false" />
+    <Reference Include="PhotonUnityNetworking" HintPath="$(RepoManagedDir)/PhotonUnityNetworking.dll" Private="false" />
+    <Reference Include="UnityEngine" HintPath="$(RepoManagedDir)/UnityEngine.dll" Private="false" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(RepoManagedDir)/UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="UnityEngine.InputLegacyModule" HintPath="$(RepoManagedDir)/UnityEngine.InputLegacyModule.dll" Private="false" />
+    <Reference Include="UnityEngine.IMGUIModule" HintPath="$(RepoManagedDir)/UnityEngine.IMGUIModule.dll" Private="false" />
+    <Reference Include="UnityEngine.TextRenderingModule" HintPath="$(RepoManagedDir)/UnityEngine.TextRenderingModule.dll" Private="false" />
+  </ItemGroup>
+</Project>

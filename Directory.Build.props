@@ -1,0 +1,17 @@
+<Project>
+  <Import Project="Directory.Build.local.props" Condition="Exists('Directory.Build.local.props')" />
+
+  <PropertyGroup>
+    <RepoGameDir Condition="'$(RepoGameDir)' == ''">$(REPO_GAME_DIR)</RepoGameDir>
+    <RepoManagedDir Condition="'$(RepoManagedDir)' == ''">$(RepoGameDir)/REPO_Data/Managed</RepoManagedDir>
+    <R2ProfileDir Condition="'$(R2ProfileDir)' == ''">$(R2_PROFILE_DIR)</R2ProfileDir>
+  </PropertyGroup>
+
+  <Target Name="ValidateGameReferences" BeforeTargets="ResolveReferences"
+          Condition="'$(MSBuildProjectName)' == 'EndGameStats'">
+    <Error Condition="'$(RepoGameDir)' == ''"
+           Text="Set REPO_GAME_DIR or create Directory.Build.local.props from the included example." />
+    <Error Condition="'$(R2ProfileDir)' == ''"
+           Text="Set R2_PROFILE_DIR or create Directory.Build.local.props from the included example." />
+  </Target>
+</Project>
