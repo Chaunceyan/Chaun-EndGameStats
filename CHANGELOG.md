@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.1
+
+- Added the public GitHub repository and issue tracker to the package page.
+- Added public build instructions and released the source under the MIT License.
+
 ## 0.4.0
 
 - Added per-player enemy kills and the `物理超度师` title for the level leader.

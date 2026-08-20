@@ -13,7 +13,7 @@ public sealed class Plugin : BaseUnityPlugin
 {
     public const string PluginGuid = "chaun.repo.endgamestats";
     public const string PluginName = "End Game Stats";
-    public const string PluginVersion = "0.4.0";
+    public const string PluginVersion = "0.4.1";
 
     internal static Plugin Instance { get; private set; } = null!;
     internal RunStatsBoard Board { get; private set; } = new();

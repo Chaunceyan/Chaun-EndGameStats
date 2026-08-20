@@ -1,6 +1,6 @@
 {
   "name": "EndGameStats",
-  "version_number": "0.4.0",
+  "version_number": "0.4.1",
   "website_url": "https://github.com/Chaunceyan/Chaun-EndGameStats",
   "description": "Live per-level multiplayer stats for deaths, rescues, enemy kills, recovered value, and valuable damage.",
   "dependencies": [

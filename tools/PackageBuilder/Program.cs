@@ -6,7 +6,7 @@ var package = Path.Combine(root, "artifacts", "EndGameStats");
 Directory.CreateDirectory(package);
 
 WriteIcon(Path.Combine(package, "icon.png"));
-var zipPath = Path.Combine(root, "artifacts", "Chaun-EndGameStats-0.4.0.zip");
+var zipPath = Path.Combine(root, "artifacts", "Chaun-EndGameStats-0.4.1.zip");
 if (File.Exists(zipPath)) File.Delete(zipPath);
 ZipFile.CreateFromDirectory(package, zipPath, CompressionLevel.Optimal, false);
 Console.WriteLine(zipPath);
